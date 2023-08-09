@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            font-family: gilroy;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        #nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 7%;
+            width: 100%;
+            position: fixed;
+            z-index: 99;
+            padding: 0px 30px;
+        }
+
+        #nav>h3 {
+            font-family: gilroy;
+            font-weight: 400;
+            font-size: 22px;
+        }
+
+        #nav>button {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        #nav>button>a {
+            padding: 10px 20px;
+            border-radius: 50px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        body {
+            background-image: url('8.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .contact-form {
+            width: 300px;
+            margin-top: 50px;
+            color: aliceblue;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 900;
+            font-size: 1.5rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-bottom: 10px;
+        }
+
+        .contact-form input {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 900;
+            font-size: 1.5rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-bottom: 25px;
+        }
+
+        .contact-form textarea {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 900;
+            font-size: 1.5rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-bottom: 25px;
+        }
+
+        .contact-form button {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 15px;
+            font-weight: 900;
+            font-size: 1rem;
+            border: 2px solid white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .contact-form button:hover {
+            background-color: aliceblue;
+            color: black;
+        }
+
+        input {
+            border: none;
+            border-radius: 15px;
+            padding: 5px;
+            width: 100%;
+            background-color: darkgrey;
+            border: 2px solid white;
+        }
+
+        input:hover {
+            background-color: #fff;
+        }
+
+        textarea {
+            border: none;
+            border-radius: 13px;
+            padding: 10px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            background-color: darkgrey;
+            border: 2px solid white;
+        }
+
+        textarea:hover {
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="contact-form">
+            <h2>CONTACT US</h2>
+            <form method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required placeholder="Leave a message"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+    </center>
+    </div>
+</body>
+
+</html>
